@@ -43,6 +43,16 @@ using namespace std;
 //smart pointers
 unique_ptr<string> demo(const char*);
 
+//Обобщённые константные выражения
+constexpr int GiveFive() {return 5;}
+int some_value[GiveFive() + 7];
+
+constexpr double accelerationOfGravity = 9.8;
+constexpr double moonGravity = accelerationOfGravity / 6;
+
+
+
+
 int main()
 {
     //std::initializer_list
